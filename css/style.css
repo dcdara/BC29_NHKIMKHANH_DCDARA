@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Jost", sans-serif;
+}
+.navbar {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  top: 40px;
+  right: 0;
+  left: 0;
+  padding: 20px 0;
+}
+
+.navbar-brand--logo {
+  font-size: 34px;
+  color: #189a46;
+  font-weight: 600;
+}
+.navbar-nav--menu .nav-item .nav-link {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0 15px;
+  color: #000c04;
+}
+.nav-item__line {
+  width: 0%;
+  height: 2px;
+  background-color: #189a46;
+  margin-left: 13px;
+  transition: all 0.5s;
+}
+.navbar-nav--menu .nav-item:hover > .nav-item__line {
+  width: 69.1%;
+  margin-left: 13px;
+}
+
+.navbar-nav--menu .nav-item:hover > .nav-link {
+  color: #189a46;
+}
+.navbar-nav--menu .nav-item .active .nav-link {
+}
+
+/* Carousel */
+.carousel-item--pic img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.carousel-caption--config1 {
+  bottom: 20%;
+  text-align: left;
+}
+.carousel-caption--config {
+  bottom: 20%;
+  text-align: left;
+  left: 600px;
+}
+
+.carousel__title h5 {
+  font-size: 66px;
+  line-height: 76px;
+  font-weight: 700;
+}
+.carousel__title p {
+  margin-bottom: 45px;
+}
+
+.btn--read-more {
+  border-radius: 10px;
+  padding: 12px 35px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  background-color: white;
+  color: #189a46;
+}
+.btn--read-more1 {
+  border-radius: 10px;
+  padding: 12px 35px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border-top: 0;
+  border-bottom: 0;
+}
+.carousel-indicators li.active {
+  width: 35px;
+  height: 10px;
+  border-radius: 10px;
+}
+.carousel-indicators li:hover {
+  width: 35px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #189a46;
+  opacity: 2;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-brand--logo a {
+    font-size: 27px;
+  }
+  .navbar-nav--menu .nav-item .nav-link {
+    font-size: 0.9rem;
+  }
+  .navbar-nav--menu .nav-item {
+    margin-top: 5px;
+  }
+}
