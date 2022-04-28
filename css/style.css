@@ -20,8 +20,133 @@ ul {
     list-style: none;
 }
 
+/* Dark light theme */
+
+:root {
+    --primary-color: #189A46;
+    --secondary-color: #f53626;
+    --font-color: #696969;
+    --bg-color: #fff;
+    --heading-color: #000c04;
+    --border-radius: 10px;
+    --border-color: #ddd;
+    --border-light:#f0f3f0;
+    --nav-color: #292922;
+    --dropdown-color: #fff;
+    --bg-light: #936be80d;
+    --font-content:#696969;
+    --h-color: #000;
+  }
+  
+  [data-theme="dark"] {
+    --primary-color: #189A46;
+    --secondary-color: #f53626;
+    --font-color: #afafaf;
+    --bg-color:#151515;
+    --heading-color: #ddd;
+    --border-color: #333;
+    --border-light: #444;
+    --nav-color: #fff;
+    --bg-light: #222;
+    --dropdown-color:#151515;
+    --font-content:#afafaf;
+    --h-color: #fff;
+
+  }
+
+/*-- toggle switch --*/
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .theme-switch-wrapper em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+  
+  .theme-switch {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    margin: 0;
+  }
+  
+  .theme-switch input {
+    display: none;
+  }
+
+/*-- //toggle switch --*/
+/*-- dark and light mode styling --*/
+.mode-container {
+    width: 24px;
+    height: 24px;
+    padding: 3px 0;
+    margin-left: 20px;
+  }
+  
+  .fa-sun {
+    position: relative;
+    height: 24px;
+    width: 20px;
+
+  }
+  
+  .fa-moon {
+    overflow: hidden;
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .mode-container i.fa-sun {
+    display: none;
+  }
+  
+  .mode-container i.fa-moon {
+    display: block;
+  }
+  
+  input:checked+.mode-container i.fa-sun {
+    display: block;
+  }
+  
+  input:checked+.mode-container i.fa-moon {
+    display: none;
+  }
+  
+  /*-- //dark and light mode styling --*/
+  button.navbar-toggler .icon-close {
+    display: block;
+  }
+  
+  button.navbar-toggler .icon-expand {
+    display: none;
+  }
+  
+  button.navbar-toggler.collapsed .icon-close {
+    display: none;
+  }
+  
+  button.navbar-toggler.collapsed .icon-expand {
+    display: block;
+  }
+  
+
+
+
+
 
 /* Pricing */
+
+#pricing {
+    background-color: var(--bg-light);
+    padding: 100px 0;
+}
+
+.pricing__content{
+    color: var(--h-color);
+}
 .pricing__title {
     text-align: center;
     padding-bottom: 40px;
@@ -35,22 +160,19 @@ ul {
 }
 
 .pricing__title h1 {
-    color: #000000;
+    color: var(--heading-color);
     font-weight: 600;
 }
 
+.pricing__list{
 
-#pricing {
-    background-color: #936be80d;
-    padding: 100px 0;
+    color: var(--font-content);
 }
 
-.pricing__list {
-    /* margin: 0 5% auto; */
-}
+
 
 .pricing__item {
-    background-color: #fff;
+    background-color: var(--bg-color);
     border-radius: 6px;
     padding: 0;
 }
@@ -105,8 +227,7 @@ ul {
     font-size: 18px;
     line-height: 28px;
     font-weight: normal;
-    color: #304659;
-
+    color: var(--font-content);
     font-size: 18px;
     line-height: 28px;
     font-weight: normal;
@@ -164,6 +285,7 @@ ul {
 /* Nutrition */
 
 #nutrition {
+    background-color: var(--bg-color);
     padding: 100px 0;
 }
 
@@ -172,6 +294,7 @@ ul {
 }
 
 .nutrition__title h3 {
+    
     color: red;
     font-size: 18px;
     letter-spacing: 1px;
@@ -179,14 +302,14 @@ ul {
 }
 
 .nutrition__title h1 {
-    color: #000000;
+    color: var(--heading-color);
     font-weight: 600;
 }
 
 .nutrition__title p {
     font-size: 1.2em;
     line-height: 28px;
-    color: #696969;
+    color: var(--font-color);
     margin-top: 20px;
 }
 
@@ -251,7 +374,7 @@ ul {
 
 #testimonial {
     padding: 100px 0;
-    background-color: #936be80d;
+    background-color: var(--bg-light)   ;
 }
 
 .testimonial__title {
@@ -266,13 +389,13 @@ ul {
 }
 
 .testimonial__title h1 {
-    color: #000000;
+    color: var(--h-color);
     font-weight: 600;
     margin-bottom: 3rem;
 }
 
 .testimonial__slick--content {
-    background-color: white;
+    background-color: var(--bg-color);
     padding: 40px 30px;
     position: relative;
     border-radius: 10px;
@@ -289,7 +412,7 @@ ul {
 .slick__item--comment blockquote q {
     font-size: 1.2em;
     line-height: 28px;
-    color: #696969;
+    color: var(--font-color);
 
 }
 
@@ -318,6 +441,7 @@ ul {
     margin: 0;
     font-weight: 600;
     font-size: 20px;
+    color: var(--h-color);
 }
 
 .item__author--title p {
@@ -479,6 +603,7 @@ ul {
 /* Subscribe */
 
 #subscribe {
+    background-color: var(--bg-color);
     padding: 100px 0;
 }
 
@@ -487,14 +612,14 @@ ul {
 }
 
 .subscribe__title h1 {
-    color: #000000;
+    color: var(--h-color);
     font-weight: 600;
 }
 
 .subscribe__title p {
     font-size: 1.2em;
     line-height: 28px;
-    color: #696969;
+    color: var(--font-color);
     margin-top: 20px;
 }
 
