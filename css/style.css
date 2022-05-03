@@ -351,6 +351,7 @@ input:checked+.mode-container i.fa-moon {
   margin-top: 25px;
   margin-bottom: 15px;
   color: var(--heading-color);
+  cursor: pointer;
 }
 
 .project__item--content h4:hover {
