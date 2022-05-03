@@ -14,6 +14,7 @@ a {
 
 a:hover {
     text-decoration: none;
+    color: #fff;
 }
 
 ul {
@@ -30,112 +31,93 @@ ul {
     --heading-color: #000c04;
     --border-radius: 10px;
     --border-color: #ddd;
-    --border-light:#f0f3f0;
+    --border-light: #f0f3f0;
     --nav-color: #292922;
     --dropdown-color: #fff;
     --bg-light: #936be80d;
-    --font-content:#696969;
+    --font-content: #696969;
     --h-color: #000;
-  }
-  
-  [data-theme="dark"] {
+}
+
+[data-theme="dark"] {
     --primary-color: #189A46;
     --secondary-color: #f53626;
     --font-color: #afafaf;
-    --bg-color:#151515;
+    --bg-color: #151515;
     --heading-color: #ddd;
     --border-color: #333;
     --border-light: #444;
     --nav-color: #fff;
     --bg-light: #222;
-    --dropdown-color:#151515;
-    --font-content:#afafaf;
+    --dropdown-color: #151515;
+    --font-content: #afafaf;
     --h-color: #fff;
 
-  }
+}
 
 /*-- toggle switch --*/
+
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-  }
-  
-  .theme-switch-wrapper em {
+}
+
+.theme-switch-wrapper em {
     margin-left: 10px;
     font-size: 1rem;
-  }
-  
-  .theme-switch {
+}
+
+.theme-switch {
     display: inline-block;
     position: relative;
     width: 60px;
     margin: 0;
-  }
-  
-  .theme-switch input {
+}
+
+.theme-switch input {
     display: none;
-  }
+}
 
 /*-- //toggle switch --*/
+
+
 /*-- dark and light mode styling --*/
 .mode-container {
     width: 24px;
     height: 24px;
     padding: 3px 0;
     margin-left: 20px;
-  }
-  
-  .fa-sun {
+}
+
+.fa-sun {
     position: relative;
     height: 24px;
     width: 20px;
 
-  }
-  
-  .fa-moon {
+}
+
+.fa-moon {
     overflow: hidden;
     position: relative;
     width: 20px;
     height: 20px;
-  }
-  
-  .mode-container i.fa-sun {
-    display: none;
-  }
-  
-  .mode-container i.fa-moon {
-    display: block;
-  }
-  
-  input:checked+.mode-container i.fa-sun {
-    display: block;
-  }
-  
-  input:checked+.mode-container i.fa-moon {
-    display: none;
-  }
-  
-  /*-- //dark and light mode styling --*/
-  button.navbar-toggler .icon-close {
-    display: block;
-  }
-  
-  button.navbar-toggler .icon-expand {
-    display: none;
-  }
-  
-  button.navbar-toggler.collapsed .icon-close {
-    display: none;
-  }
-  
-  button.navbar-toggler.collapsed .icon-expand {
-    display: block;
-  }
-  
+}
 
+.mode-container i.fa-sun {
+    display: none;
+}
 
+.mode-container i.fa-moon {
+    display: block;
+}
 
+input:checked+.mode-container i.fa-sun {
+    display: block;
+}
 
+input:checked+.mode-container i.fa-moon {
+    display: none;
+}
 
 /* Pricing */
 
@@ -144,9 +126,10 @@ ul {
     padding: 100px 0;
 }
 
-.pricing__content{
+.pricing__content {
     color: var(--h-color);
 }
+
 .pricing__title {
     text-align: center;
     padding-bottom: 40px;
@@ -164,7 +147,7 @@ ul {
     font-weight: 600;
 }
 
-.pricing__list{
+.pricing__list {
 
     color: var(--font-content);
 }
@@ -294,7 +277,7 @@ ul {
 }
 
 .nutrition__title h3 {
-    
+
     color: red;
     font-size: 18px;
     letter-spacing: 1px;
@@ -374,7 +357,7 @@ ul {
 
 #testimonial {
     padding: 100px 0;
-    background-color: var(--bg-light)   ;
+    background-color: var(--bg-light);
 }
 
 .testimonial__title {
@@ -739,19 +722,53 @@ ul {
 }
 
 .footer__copyright a {
-    color: #f53626;
+    color: var(--primary-color);
 }
 
 .footer__copyright a:hover {
     text-decoration: underline;
 }
 
+/* Backtotop */
+
+.backtoTop {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    line-height: 48px;
+    text-align: center;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 16px;
+    margin-left: 5px;
+    color: #fff;
+    font-weight: 700;
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s;
+    z-index: 1;
+
+}
+
+.backtoTop a:hover{
+    color: #fff !important;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 /* Extra small devices (portrait phones, less than 576px) */
+
 @media (max-width: 575.98px) {
-    
+
     #pricing {
-    padding: 40px 0;
+        padding: 40px 0;
     }
 
     .pricing__item {
@@ -771,7 +788,7 @@ ul {
     }
 
     .nutrition__video {
-       padding: 0;
+        padding: 0;
     }
 
     .input-group {
@@ -783,26 +800,32 @@ ul {
         padding: 0 20px;
     }
 
-    .subscribe__button{
+    .subscribe__button {
         width: 100%;
         margin-top: 15px;
     }
 
-    .btn__subscribe{
+    .btn__subscribe {
         width: 100%;
+    }
+
+    .backtoTop {
+        display: none !important;
     }
 
 }
 
 /* Small devices (landscape phones, less than 768px) */
+
 @media (max-width: 767.98px) {
     #pricing {
         padding: 40px 0;
     }
+
     .pricing__item {
         margin-bottom: 30px;
     }
-    
+
     .btn__poochcare {
         display: none;
     }
@@ -813,6 +836,7 @@ ul {
 }
 
 /* Medium devices (tablets, less than 992px) */
+
 @media (max-width: 991.98px) {
     .subscribe__title {
         padding: 0 20px;
@@ -832,4 +856,5 @@ ul {
 }
 
 /* Large devices (desktops, less than 1200px) */
+
 @media (max-width: 1199.98px) {}
