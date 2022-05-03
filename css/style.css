@@ -1112,7 +1112,7 @@ input:checked+.mode-container i.fa-moon {
   }
 
   .ml-auto {
-    text-align: center;
+    text-align: left;
 
   }
 
@@ -1124,6 +1124,24 @@ input:checked+.mode-container i.fa-moon {
     margin-left: 0px;
   }
 
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: none;
+  }
+
+  .carousel-caption {
+    left: 20px;
+  }
+
+
+  .btn--read-more {
+    padding: 12px 25px;
+  }
+
+  .btn--read-more1 {
+    padding: 12px 25px;
+  }
+
   #project {
     padding: 20px 0;
   }
@@ -1133,10 +1151,8 @@ input:checked+.mode-container i.fa-moon {
   }
 
   .carousel__title h5 {
-    font-size: 40px;
-    line-height: 56px;
-    font-weight: 900;
-    width: 100%;
+    font-size: 32px;
+    line-height: 40px;
   }
 
   #service {
@@ -1147,7 +1163,7 @@ input:checked+.mode-container i.fa-moon {
     margin-top: 20px;
   }
 
-  
+
   #pricing {
     padding: 40px 0;
   }
@@ -1231,7 +1247,7 @@ input:checked+.mode-container i.fa-moon {
     margin-top: 40px;
   }
 
-  
+
   #pricing {
     padding: 40px 0;
   }
@@ -1282,7 +1298,7 @@ input:checked+.mode-container i.fa-moon {
     margin-top: 50px;
   }
 
-  
+
   .subscribe__title {
     padding: 0 20px;
   }
@@ -1298,7 +1314,7 @@ input:checked+.mode-container i.fa-moon {
   #nutrition {
     padding: 50px 0;
   }
-  
+
 }
 
 /* Large devices (desktops, less than 1200px) */
