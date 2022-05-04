@@ -1148,7 +1148,12 @@ input:checked+.mode-container i.fa-moon {
   }
 
   .about__title {
-    padding: 0 20px;
+    padding: 0 10px !important;
+  }
+
+  .about__title h1 {
+    font-size: 27px;
+    line-height: 32px;
   }
 
   .carousel__title h5 {
@@ -1161,9 +1166,13 @@ input:checked+.mode-container i.fa-moon {
   }
 
   .service__item--title {
-    margin-top: 20px;
+    margin-top: 10px !important;
   }
 
+  .service__item--title h1 {
+    font-size: 27px;
+    line-height: 32px;
+  }
 
   #pricing {
     padding: 40px 0;
@@ -1171,6 +1180,11 @@ input:checked+.mode-container i.fa-moon {
 
   .pricing__item {
     margin-bottom: 30px;
+  }
+
+  .pricing__title h1 {
+    font-size: 27px;
+    line-height: 32px;
   }
 
   .btn__poochcare {
@@ -1182,11 +1196,25 @@ input:checked+.mode-container i.fa-moon {
   }
 
   .nutrition__title {
-    padding: 0 20px;
+    padding: 0 10px !important;
+  }
+
+  .nutrition__title h1 {
+    font-size: 27px;
+    line-height: 32px;
   }
 
   .nutrition__video {
     padding: 0;
+  }
+
+  .testimonial__title h1 {
+    font-size: 27px;
+    line-height: 32px;
+  }
+
+  .testimonial__title {
+    padding: 0 10px !important;
   }
 
   .input-group {
